@@ -87,8 +87,8 @@ function App() {
   return (
 
     <>
-    <div className='main'>
-        <Box className="rps-choice-display" title="You" you={true} myImg={myImg}result={result} />
+    <div className='main container'>
+        <Box className="rps-choice-display" title="You" you={true} myImg={myImg} result={result} />
          <span className="rps-vs">VS</span>
         <Box className="rps-choice-display" title="Computer" comImg={comImg}
           result={comResult}
