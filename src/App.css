@@ -1,0 +1,97 @@
+.box {
+  border: 1px solid black;
+  width: 500px;
+  text-align: center;
+}
+.item-img {
+  width: 400px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.rps-choice-display {
+  width: 96px;
+  height: 96px;
+  border-radius: 16px;
+  border: 1px solid #e5e5e5;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ .rps-vs {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ccc;
+  flex-shrink: 0;
+}
+ 
+
+ 
+/* 선택 버튼 */
+.rps-choices {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 1.75rem;
+}
+ 
+.rps-choice-btn {
+  flex: 1;
+  padding: 0.75rem 0;
+  border-radius: 14px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+}
+ 
+.rps-choice-btn:hover {
+  background: #f5f5f5;
+  border-color: #ccc;
+  transform: translateY(-2px);
+}
+ 
+.rps-choice-btn:active {
+  transform: scale(0.97);
+}
+ 
+.rps-choice-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+ 
+.rps-choice-btn.selected {
+  border-color: #888;
+  background: #f5f5f5;
+}
+ 
+.rps-choice-btn span {
+  font-size: 13px;
+  color: #666;
+}
+
+.win {
+  border: 10px solid green;
+  color: green;
+}
+.lose {
+  border: 10px solid red;
+  color: red;
+}
+.tie {
+  border: 10px solid black;
+  color: black
+}
